@@ -25,4 +25,4 @@ steps:
   displayName: 'Publish Test Results'
   condition: succeededOrFailed()
   inputs:
-    testResultsFiles: 'out/test-results.xml'
+    testResultsFiles: '**/test-results.xml'
