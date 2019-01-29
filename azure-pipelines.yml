@@ -18,8 +18,8 @@ steps:
 - script: |
     npm install
     npm run build
-    mocha test --reporter mocha-junit-reporter
-    displayName: 'npm install, build, and test'
+    npm run mocha test --reporter mocha-junit-reporter
+  displayName: 'npm install, build, and test'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
